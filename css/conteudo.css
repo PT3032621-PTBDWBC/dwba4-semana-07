@@ -1,40 +1,58 @@
 @charset "UTF-8";
 
 #conteudo {
-		width: 100%;
-		float: right;		
-		}
-		
+    width: 100%;
+    float: right;
+}
+
 img {
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define 2 colunas */
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.img {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px; /* Reduz a distância entre a legenda e a imagem */
+    display: block;
 }
 
 figure {
-    display: inline-block;
-    border: 0px dotted gray;
-    margin: 20px; /* adjust as needed */
+    text-align: center;
+    margin: 10px; /* Ajusta o espaçamento ao redor da imagem */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Mantém legenda e imagem alinhadas */
 }
+
 figure img {
     vertical-align: top;
 }
+
 figure figcaption {
-    border: 1px dotted blue;
     text-align: center;
 }
 
 aside p {
-	text-align: center;
+    text-align: center;
 }
 
-h1{
-	text-align: center;
+h1 {
+    text-align: center;
 }
-
-
-
-
-
