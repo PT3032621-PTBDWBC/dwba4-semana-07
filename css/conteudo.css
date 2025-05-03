@@ -20,11 +20,11 @@ img {
     padding: 20px;
 }
 .facebook-icon {
-    width: 10px;
-    height: 10px;
-    max-width: 10px;
-    max-height: 10px;
-    object-fit: contain;
+    width: 30px; /* Ajuste para um tamanho mais adequado */
+    height: auto; /* Mantém a proporção original */
+    max-width: 40px; /* Limite de largura */
+    max-height: 40px; /* Limite de altura */
+    object-fit: contain; /* Garante que a imagem não seja cortada ou esticada */
 }
 .img {
     width: 500px;
